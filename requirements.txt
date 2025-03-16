@@ -1,8 +1,10 @@
 langchain
 transformers
 torch
-fastapi
-uvicorn
 faiss-cpu
 numpy
+langchain-community
+langchain-ollama
+
+
 
