@@ -25,8 +25,8 @@ but most require **cloud processing, raising privacy concerns** for copyrighted 
 
 ## 📂 Directory Structure  
 ```bash
-├──    data/                 # Stores PDFs (e.g., “biochem.pdf”)
-├──    src/                  # Main application source code
+├──   data/                 # Stores PDFs (e.g., “biochem.pdf”)
+├──   src/                  # Main application source code
 │   ├── main.py             # Entry point for the app
 │   ├── models.py           # Manages LLM and embedding model
 │   ├── pdf_processing.py   # Handles PDF text extraction & chunking
