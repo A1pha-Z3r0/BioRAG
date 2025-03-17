@@ -1,13 +1,15 @@
 """This script has the main logic for a QnA bot for a pdf"""
 
+import argparse
+
 from pdf_processing import PDF
 from models import MODELS
 from query_script import QueryScript
 
-def main():
+def main(pdf_path):
     """This has the main business logic."""
     # Initialize PDF class with the path to your PDF file
-    pdf = PDF("../data/biochem.pdf")
+    pdf = PDF(pdf_path)
 
     # Split PDF into chunks
     pdf.split_chunk()
@@ -47,4 +49,9 @@ def main():
     print(response)
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description="QnA Bot for PDF using RAG.")
+    parser.add_argument("--pdf_path","-p", type=str, help="Path to the PDF file")
+
+    args = parser.parse_args()
+
+    main(args.pdf_path)
