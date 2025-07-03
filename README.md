@@ -53,7 +53,7 @@ ollama pull mistral
 ```
 4️⃣ **Run the src/main.py script**
 ```bash
-python src/pdf_processing.py --pdf data/biochem.pdf
+python src/pdf_processing.py -p data/biochem.pdf
 ```
 
 5️⃣**Ask Question**
